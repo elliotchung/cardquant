@@ -124,7 +124,7 @@ print(pricing_engine.options[70].call.theta)
 # Add a new card and recalc
 pricing_engine.add_card(5)
 print("\nAfter adding card 5:")
-print(game)
+print(pricing_engine)
 ```
 
 ---

@@ -22,10 +22,11 @@ setup(
         "Operating System :: OS Independent",
     ],
     packages=find_packages(),
-    python_requires=">=3.7",
+    python_requires=">=3.9",
     install_requires=[
         "numpy",
         "pandas",
+        "rich",
         "typing_extensions; python_version < '3.9'",
     ],
     include_package_data=True,
