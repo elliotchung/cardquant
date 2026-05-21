@@ -8,6 +8,7 @@ values and your error. Leave an estimate blank to just "reveal". Stop with
 Ctrl-C or end-of-input.
 """
 import random
+from typing import Optional
 
 from cardquant import CardValuation
 
@@ -15,7 +16,7 @@ STANDARD_DECK = list(range(1, 14)) * 4
 MEAN_RANK = 7  # mean rank of a standard 1-13 deck, used only to pick a sensible strike
 
 
-def _ask_number(prompt: str) -> float | None:
+def _ask_number(prompt: str) -> Optional[float]:
     """Read a float from stdin; blank or unparseable input returns None (skip)."""
     raw = input(prompt).strip()
     if not raw:
