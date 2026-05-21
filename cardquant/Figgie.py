@@ -144,10 +144,10 @@ class Figgie:
     def __repr__(self) -> str:
 
         suit_info = [
-            ("Diamonds", "♦", self._p_hearts, "\033[91m"),
-            ("Hearts",   "♥", self._p_diamonds,   "\033[91m"),
-            ("Clubs",    "♣", self._p_spades,    "\033[30m"),
-            ("Spades",   "♠", self._p_clubs,   "\033[30m"),
+            ("Diamonds", "♦", self._p_diamonds, "\033[91m"),
+            ("Hearts",   "♥", self._p_hearts,   "\033[91m"),
+            ("Clubs",    "♣", self._p_clubs,    "\033[30m"),
+            ("Spades",   "♠", self._p_spades,   "\033[30m"),
         ]
         
         sorted_suits = sorted(suit_info, key=lambda x: x[2]._12, reverse=True)

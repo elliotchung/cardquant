@@ -22,11 +22,11 @@ setup(
         "Operating System :: OS Independent",
     ],
     packages=find_packages(),
-    python_requires=">=3.7",
+    python_requires=">=3.10",
     install_requires=[
         "numpy",
         "pandas",
-        "typing_extensions; python_version < '3.9'",
+        "rich",
     ],
     include_package_data=True,
     keywords="quantitative trading, options pricing, card games, finance, simulation",
